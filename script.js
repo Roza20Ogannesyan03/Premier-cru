@@ -1,25 +1,29 @@
-var swiper = new Swiper(".slider-swiper", {
-    simulateTouch: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      slideChange: function (swiper) {
-        console.log("bbb");
-        document.querySelector(".first-slide__news").innerHTML =
-          (swiper.realIndex < 10 ? "0" : "") + (+swiper.realIndex + 1);
-      },
-    },
+var swiper = new Swiper(".swiper", {
+    // simulateTouch: true,
+     navigation: {
+       nextEl: ".slider__swiper-button-next",
+       prevEl: ".slider__swiper-button-prev",
+     },
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 60,
+    // on: {
+    //   slideChange: function (swiper) {
+    //     console.log("bbb");
+    //     document.querySelector(".first-slide__news").innerHTML =
+    //       (swiper.realIndex < 10 ? "0" : "") + (+swiper.realIndex + 1);
+    //   },
+    // },
   
-    Keyboard: {
-      enabled: true,
-      onlyInViueport: true,
-      pageUpDown: true,
-    },
-    autoHeight: false,
-    //slidesPerView: 4,
-    slidesPerGroup: 1,
-    //spaceBetween: 30,
-    //loop: true,
+    // Keyboard: {
+    //   enabled: true,
+    //   onlyInViueport: true,
+    //   pageUpDown: true,
+    // },
+    // autoHeight: false,
+    // //slidesPerView: 4,
+    // slidesPerGroup: 1,
+    // //
+    // //loop: true,
   });

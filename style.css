@@ -22,10 +22,10 @@ body {
     max-width: 1920px;
     display: flex;
     flex-direction: column;
-
+gap: 60px;
 }
 
-a {
+.navigation a {
     text-decoration: none;
 }
 
@@ -42,18 +42,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #E1E5EE;
 }
 
-hr {
-    color: #E1E5EE;
-}
-
-.header-container {
-    position: relative;
+.header__container {
     width: 1660px;
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -62,8 +59,6 @@ hr {
 }
 
 .navigation {
-    position: absolute;
-    left: 364px;
     width: 591px;
     height: 20px;
     display: flex;
@@ -77,8 +72,6 @@ a {
 }
 
 .delivery-button {
-    position: absolute;
-    left: 1169px;
     width: 125px;
     height: 44px;
     border: 1px solid #d81010;
@@ -89,14 +82,12 @@ a {
 }
 
 .contacts {
-    position: absolute;
-    left: 1477px;
     width: 183px;
     height: 42px;
     text-align: end;
 }
 
-.qqq {
+.contacts__number {
     width: 183px;
     height: auto;
     display: flex;
@@ -116,7 +107,7 @@ a {
     height: 22px;
 }
 
-.contacts_text {
+.contacts__text {
     margin: 0px;
     font-size: 14px;
     line-height: 17.17px;
@@ -125,20 +116,27 @@ a {
 
 /*****************************************************************************************************************************/
 .slider-swiper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 182px;
     height: 820px;
+}
+
+.slider-swiper .swiper-slide {
+    width: 1090px;
 }
 
 .slider-swiper__text {
     margin-left: 374px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     width: 1414px;
 }
+.descr {
+    display: flex;
+    flex-direction: column;
+    width: 1088px;
+    height: 96px;
 
+}
 .pagination-container {
     display: flex;
     align-items: center;
@@ -152,28 +150,38 @@ a {
     height: 24px;
 }
 
-.descr {
-    display: flex;
-    flex-direction: column;
-    width: 1088px;
-    height: 96px;
-
-}
 
 .arrows {
     display: flex;
     width: 168px;
     height: 64px;
     gap: 50px;
+    position: relative;
+    left: 162px;
 
 }
 
 .arrow {
-    width: 64px;
-    height: 64px;
-    border-radius: 50px;
+    width: 32px;
+    height: 32px;
 }
 
+.slider__swiper-button-prev,
+.slider__swiper-button-next,
+.about-us__swiper-button-next,
+.about-us__swiper-button-prev{
+    width: 59px;
+    height: 59px;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
 .slides {
     width: 4360px;
     height: 568px;
@@ -181,24 +189,18 @@ a {
     gap: 64px;
 }
 
-.swiper-slide {
-    width: 1090px;
-    height: 568px;
-    border-radius: 16px;
-}
+ 
 
 .about-us {
     width: 1376px;
     height: 332px;
-    margin-top: 60px;
     display: flex;
-    margin-left: 272px;
+    align-items: flex-end;
 }
 
 .about-us__text1 {
     width: 640px;
     height: 240px;
-    margin-top: 92px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -219,6 +221,12 @@ a {
     gap: 20px;
 }
 
+.font-24 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #777e90;
+}
+
 .about-us__text2 {
     width: 672px;
     height: 180px;
@@ -230,8 +238,9 @@ a {
 }
 
 .about-us__text2 p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #777e90;
 }
 
 .about-us-numbers {
@@ -239,8 +248,7 @@ a {
     height: 221px;
     display: flex;
     gap: 32px;
-    margin-left: 272px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .blocks {
@@ -284,16 +292,12 @@ a {
 
 .about-us__swiper {
     margin-top: 90px;
-    position: absolute;
-}
-
-.about-us__slides {
-    display: flex;
-    width: 2331px;
+    position: relative;
+    width: 1920px;
     height: 690px;
-    gap: 50px;
-
 }
+
+
 
 .about-us__swiper-slide {
     width: 475px;
@@ -301,4 +305,28 @@ a {
     /* left: 149px;*/
     opacity: 0.699999988079071px;
 
+}
+
+.about-us__slide{
+    width: 475px;
+}
+.about-us__swiper-button-prev {
+    position: absolute;
+    left: 70px;
+    top: 313px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.about-us__swiper-button-next {
+    position: absolute;
+    left: 1530px;
+    top: 313px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1378px;
+    margin: 0 auto;
 }

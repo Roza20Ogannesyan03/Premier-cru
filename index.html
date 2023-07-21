@@ -1,133 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Premier cru</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo"><img src="images/logo.svg" alt=""></div>
-            <nav class="navigation">
-                <a href="">ГЛАВНАЯ</a>
-                <a href="">РЕСТОРАНЫ</a>
-                <a href="">О НАС</a>
-                <a href="">СОБЫТИЯ</a>
-                <a href="">ВАКАНСИИ</a>
-            </nav>
-            <button class="delivery-button">Доставка</button>
-            <div class="contacts">
-                <div class="qqq">
-                    <div class="phone-icon"><img src="images/phone.svg" alt=""></div>
-                    <div class="number">+7 (928) 864 22 22</div>
-                </div>
-                <div>
-                    <p class="contacts_text">Служба качества</p>
-                </div>
-            </div>
+      <div class="header__container">
+        <div class="logo"><img src="images/logo.svg" alt="" /></div>
+        <nav class="navigation">
+          <a href="">ГЛАВНАЯ</a>
+          <a href="">РЕСТОРАНЫ</a>
+          <a href="">О НАС</a>
+          <a href="">СОБЫТИЯ</a>
+          <a href="">ВАКАНСИИ</a>
+        </nav>
+        <button class="delivery-button">Доставка</button>
+        <div class="contacts">
+          <div class="contacts__number">
+            <div class="phone-icon"><img src="images/phone.svg" alt="" /></div>
+            <div class="number">+7 (928) 864 22 22</div>
+          </div>
+          <div>
+            <p class="contacts__text">Служба качества</p>
+          </div>
         </div>
+      </div>
     </header>
-    <hr>
     <main>
-        <div class="slider-swiper">
-            <div class="slider-swiper__text">
-                <div class="descr">
-                    <p class="weight-700">Осетинское пиво за 1 рубль</p>
-                    <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
-                </div>
-                <div class="pagination-container">
-                    <div class="swiper-pagination"><span style="display: flex; gap: 20px;"><span
-                                class="first-slide__news">01</span> /
-                            <span>04</span></span></div>
-                    <div class="arrows">
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"><img class="arrow" src="images/prev.svg" alt=""></div>
-                        <div class="swiper-button-next"><img class="arrow" src="images/next.svg" alt=""></div>
-                    </div>
-                </div>
+      <div class="slider-swiper">
+        <div class="slider-swiper__text">
+          <div class="descr">
+            <p class="weight-700">Осетинское пиво за 1 рубль</p>
+            <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
+          </div>
+          <div class="pagination-container">
+            <div class="swiper-pagination">
+              <span style="display: flex; gap: 20px"
+                ><span class="first-slide__news">01</span> /
+                <span>04</span></span
+              >
             </div>
-            <div class="slides swiper-wrapper">
-                <div class="swiper-slide"><img src="images/slide.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/slide.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/slide.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/slide.png" alt=""></div>
-            </div>
-        </div>
 
+            <div class="arrows">
+              <!-- If we need navigation buttons -->
+              <div class="slider__swiper-button-prev">
+                <img class="arrow" src="images/prevv.svg" alt="" />
+              </div>
+              <div class="slider__swiper-button-next">
+                <img class="arrow" src="images/nextt.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="slider swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/slide.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slide1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slide2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slide.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
         <div class="about-us">
-            <div class="about-us__text1">
-                <p class="about-us__title">о нас</p>
-                <div class="about-us__info">
-                    <p class="weight-700">Управляющая компания «Премьер КРЮ»</p>
-                    <p>Надеемся, что наша работа облегчит Вам непростую задачу найти самое лучшее!</p>
-                </div>
+          <div class="about-us__text1">
+            <p class="about-us__title">о нас</p>
+            <div class="about-us__info">
+              <p class="weight-700">Управляющая компания «Премьер КРЮ»</p>
+              <p class="font-24">
+                Надеемся, что наша работа облегчит Вам непростую задачу найти
+                самое лучшее!
+              </p>
             </div>
-            <div class="about-us__text2">
-                <p>Таким образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых
-                    предложений.</p>
-                <p> Задача организации, в особенности же новая модель организационной деятельности позволяет оценить
-                    значение дальнейших направлений развития.</p>
-            </div>
-        </div>
-        <div>
-            <div class="about-us-numbers">
-                <div class="blocks">
-                    <p class="about-us-numbers_p">11</p>
-                    <span></span>
-                    <div>
-                        <p class="title">Заведений во Владикавказе</p>
-                        <p class="description">We realize ideas from simple to complex, everything becomes easy to use
-                            and reach the most potential customers.</p>
-                    </div>
-                </div>
-                <div class="blocks">
-                    <p class="about-us-numbers_p">2002</p>
-                    <span></span>
-                    <div>
-                        <p class="title">Год основания</p>
-                        <p class="description">We realize ideas from simple to complex, everything becomes easy to use
-                            and reach the most potential customers.</p>
-                    </div>
-                </div>
-                <div class="blocks">
-                    <p class="about-us-numbers_p">320</p>
-                    <span></span>
-                    <div>
-                        <p class="title">Опытных сотрудников</p>
-                        <p class="description">We realize ideas from simple to complex, everything becomes easy to use
-                            and reach the most potential customers.</p>
-                    </div>
-                </div>
-                <div class="blocks">
-                    <p class="about-us-numbers_p">845</p>
-                    <span></span>
-                    <div>
-                        <p class="title">Приготовленных блюд в день</p>
-                        <p class="description">We realize ideas from simple to complex, everything becomes easy to use
-                            and reach the most potential customers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about-us__swiper">
-            <div class="about-us__slides">
-                <div class="about-us__swiper-slide"><img src="images/about-us_slide1.png" alt=""></div>
-                <div class="about-us__swiper-slide"><img src="images/about-us_slide2.png" alt=""></div>
-                <div class="about-us__swiper-slide"><img src="images/about-us_slide3.png" alt=""></div>
-                <div class="about-us__swiper-slide"><img src="images/about-us_slide4.png" alt=""></div>
-            </div>
-            <div class="about-us__swiper-button-prev"></div>
-            <div class="about-us__swiper-button-next"></div>
+          </div>
+          <div class="about-us__text2">
+            <p>
+              Таким образом укрепление и развитие структуры влечет за собой
+              процесс внедрения и модернизации новых предложений. Задача
+              организации, в особенности же новая модель организационной
+              деятельности позволяет оценить значение дальнейших направлений
+              развития.
+            </p>
+          </div>
         </div>
 
+        <div>
+          <div class="about-us-numbers">
+            <div class="blocks">
+              <p class="about-us-numbers_p">11</p>
+              <span></span>
+              <div>
+                <p class="title">Заведений во Владикавказе</p>
+                <p class="description">
+                  We realize ideas from simple to complex, everything becomes
+                  easy to use and reach the most potential customers.
+                </p>
+              </div>
+            </div>
+            <div class="blocks">
+              <p class="about-us-numbers_p">2002</p>
+              <span></span>
+              <div>
+                <p class="title">Год основания</p>
+                <p class="description">
+                  We realize ideas from simple to complex, everything becomes
+                  easy to use and reach the most potential customers.
+                </p>
+              </div>
+            </div>
+            <div class="blocks">
+              <p class="about-us-numbers_p">320</p>
+              <span></span>
+              <div>
+                <p class="title">Опытных сотрудников</p>
+                <p class="description">
+                  We realize ideas from simple to complex, everything becomes
+                  easy to use and reach the most potential customers.
+                </p>
+              </div>
+            </div>
+            <div class="blocks">
+              <p class="about-us-numbers_p">845</p>
+              <span></span>
+              <div>
+                <p class="title">Приготовленных блюд в день</p>
+                <p class="description">
+                  We realize ideas from simple to complex, everything becomes
+                  easy to use and reach the most potential customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us__swiper swiper">
+        <div class="about-us__slides swiper-wrapper">
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide3.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide4.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide1.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="about-us__swiper-button-prev">
+          <img class="arrow" src="images/prevv.svg" alt="" />
+        </div>
+        <div class="about-us__swiper-button-next">
+          <img class="arrow" src="images/nextt.svg" alt="" />
+        </div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+    <script src="about-us.js"></script>
+  </body>
 </html>

@@ -6,14 +6,8 @@ var swiper = new Swiper(".about-us__swiper", {
     },
    
   
-    Keyboard: {
-      enabled: true,
-      onlyInViueport: true,
-      pageUpDown: true,
-    },
-    autoHeight: false,
-    //slidesPerView: 4,
-    slidesPerGroup: 1,
-    //spaceBetween: 30,
-    //loop: true,
+ 
+    slidesPerView: 4,
+    loop: true,
+    spaceBetween: 44,
   });
