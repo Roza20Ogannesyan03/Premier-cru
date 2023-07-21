@@ -1,8 +1,8 @@
-var swiper = new Swiper(".slider", {
+var swiper = new Swiper(".slider-swiper", {
     simulateTouch: true,
     navigation: {
-      nextEl: ".news__swiper-button-next",
-      prevEl: ".news__swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     on: {
       slideChange: function (swiper) {
@@ -20,6 +20,6 @@ var swiper = new Swiper(".slider", {
     autoHeight: false,
     //slidesPerView: 4,
     slidesPerGroup: 1,
-    spaceBetween: 30,
-    loop: true,
+    //spaceBetween: 30,
+    //loop: true,
   });
