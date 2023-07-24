@@ -37,48 +37,50 @@
     </header>
     <main>
       <div class="slider-swiper">
-        <div class="slider-swiper__text">
-          <div class="descr">
-            <p class="weight-700">Осетинское пиво за 1 рубль</p>
-            <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
-          </div>
-          <div class="pagination-container">
-            <div class="swiper-pagination">
-              <span style="display: flex; gap: 20px"
-                ><span class="first-slide__news">01</span> /
-                <span>04</span></span
-              >
+        <div class="container">
+          <div class="slider-swiper__text">
+            <div class="descr">
+              <p class="weight-700">Осетинское пиво за 1 рубль</p>
+              <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
             </div>
-
-            <div class="arrows">
-              <!-- If we need navigation buttons -->
-              <div class="slider__swiper-button-prev">
-                <img class="arrow" src="images/prevv.svg" alt="" />
+            <div class="pagination-container">
+              <div class="swiper-pagination">
+                <span style="display: flex; gap: 20px"
+                  ><span class="first-slide__news">01</span> /
+                  <span>04</span></span
+                >
               </div>
-              <div class="slider__swiper-button-next">
-                <img class="arrow" src="images/nextt.svg" alt="" />
+
+              <div class="arrows">
+                <!-- If we need navigation buttons -->
+                <div class="slider__swiper-button-prev">
+                  <img class="arrow" src="images/prevv.svg" alt="" />
+                </div>
+                <div class="slider__swiper-button-next">
+                  <img class="arrow" src="images/nextt.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper">
-          <div class="slider swiper-wrapper">
-            <div class="swiper-slide">
+          <div class="swiper-wrapper">
+            <div class="slider__swiper-slide swiper-slide">
               <img src="images/slide.png" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="slider__swiper-slide swiper-slide">
               <img src="images/slide1.png" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="slider__swiper-slide swiper-slide">
               <img src="images/slide2.png" alt="" />
             </div>
-            <div class="swiper-slide">
+            <div class="slider__swiper-slide swiper-slide">
               <img src="images/slide.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-
+      <div class="background-img"></div>
       <div class="container">
         <div class="about-us">
           <div class="about-us__text1">
@@ -153,7 +155,13 @@
       </div>
 
       <div class="about-us__swiper swiper">
-        <div class="about-us__slides swiper-wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide1.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
           <div class="swiper-slide about-us__slide">
             <img src="images/about-us_slide3.png" alt="" />
           </div>
@@ -161,21 +169,160 @@
             <img src="images/about-us_slide4.png" alt="" />
           </div>
           <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide1.png" alt="" />
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
           </div>
           <div class="swiper-slide about-us__slide">
             <img src="images/about-us_slide2.png" alt="" />
           </div>
         </div>
 
-        <div class="about-us__swiper-button-prev">
-          <img class="arrow" src="images/prevv.svg" alt="" />
+        <div class="about-us__arrows">
+          <div class="about-us__swiper-button-prev swiper-button-prev">
+            <img class="arrow" src="images/prevv.svg" alt="" />
+          </div>
+          <div class="about-us__swiper-button-next swiper-button-next">
+            <img class="arrow" src="images/nextt.svg" alt="" />
+          </div>
         </div>
-        <div class="about-us__swiper-button-next">
-          <img class="arrow" src="images/nextt.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="events">
+          <div class="events__header">
+            <h2 class="events__title">События</h2>
+            <span></span>
+            <button class="events__button">
+              <p class="button__text">Все события</p>
+              <div class="img-container">
+                <img class="button__img" src="images/arrow.png" alt="" />
+              </div>
+            </button>
+          </div>
+          <div class="all-events">
+            <div class="column1">
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container1.png" alt="" />
+                </div>
+                <h4 class="item__titles">
+                  Реально рояльное настроение в "Рояль Баре"!
+                </h4>
+                <h5 class="item__subtitle">Ресторан «Рояль»</h5>
+              </div>
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container2.png" alt="" />
+                </div>
+                <h4 class="item__titles">Банкеты со вкусом от "Premier"</h4>
+                <h5 class="item__subtitle">Ресторан «Premier»</h5>
+              </div>
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container3.png" alt="" />
+                </div>
+                <h4 class="item__titles">Сет завтраки в "Магии"</h4>
+                <h5 class="item__subtitle">Кафе «Магия»</h5>
+              </div>
+            </div>
+            <div class="column2">
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container2.png" alt="" />
+                </div>
+                <h4 class="item__titles">Банкеты со вкусом от "Premier"</h4>
+                <h5 class="item__subtitle">Ресторан «Premier»</h5>
+              </div>
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container4.png" alt="" />
+                </div>
+                <h4 class="item__titles">
+                  ТОП-5 Мест для твоего идеального завтрака
+                </h4>
+                <h5 class="item__subtitle">Ресторан «Premier»</h5>
+              </div>
+              <div class="all-events__item">
+                <div class="item__img">
+                  <img src="images/img container1.png" alt="" />
+                </div>
+                <h4 class="item__titles">
+                  Реально рояльное настроение в "Рояль Баре"!
+                </h4>
+                <h5 class="item__subtitle">Ресторан «Рояль»</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app">
+        <div class="container">
+          <div class="app__wrapper">
+            <div class="app__text">
+              <div class="app__title">Скачивайте приложение Premier CRU</div>
+              <div class="app__subtitle">
+                Получите скидку до 25% по программе лояльности, только в
+                мобильном приложении Premier CRU!
+              </div>
+              <button class="download">
+                <img src="images/app-store.svg" alt="" />
+              </button>
+              <button class="download">
+                <img src="images/google-play.svg" alt="" />
+              </button>
+            </div>
+
+            <img class="app__img" src="images/Frame 55473.png" alt="" />
+          </div>
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="block1">
+          <div>
+            <div class="footer__logo">
+              <img src="images/footer-logo.png" alt="" />
+            </div>
+            <p class="white">Управляющая компания «Премьер КРЮ»</p>
+          </div>
+          <nav class="navigation">
+            <a class="white" href="">ГЛАВНАЯ</a>
+            <a class="white" href="">РЕСТОРАНЫ</a>
+            <a class="white" href="">О НАС</a>
+            <a class="white" href="">СОБЫТИЯ</a>
+            <a class="white" href="">ВАКАНСИИ</a>
+          </nav>
+          <div class="footer__contacts">
+            <div class="footer__number">Служба качества +7 (928) 864 22 22</div>
+            <div class="soc-net">
+              <img class="icon" src="images/insta.png" alt="" />
+              <img class="icon" src="images/facebook.png" alt="" />
+              <img class="icon" src="images/vk.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <span></span>
+
+        <div class="block2">
+          <p class="white">Процедура заказа в мобильном приложении</p>
+          <p class="white">Политика конфиденциальности</p>
+          <p class="white">Разработка сайта - ABETA</p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="about-us.js"></script>
