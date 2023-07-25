@@ -17,11 +17,11 @@
       <div class="header__container">
         <div class="logo"><img src="images/logo.svg" alt="" /></div>
         <nav class="navigation">
-          <a href="">ГЛАВНАЯ</a>
-          <a href="">РЕСТОРАНЫ</a>
-          <a href="">О НАС</a>
-          <a href="">СОБЫТИЯ</a>
-          <a href="">ВАКАНСИИ</a>
+          <a class="navigation__link" href="">ГЛАВНАЯ</a>
+          <a class="navigation__link" href="">РЕСТОРАНЫ</a>
+          <a class="navigation__link" href="">О НАС</a>
+          <a class="navigation__link" href="">СОБЫТИЯ</a>
+          <a class="navigation__link" href="">ВАКАНСИИ</a>
         </nav>
         <button class="delivery-button">Доставка</button>
         <div class="contacts">
@@ -37,33 +37,29 @@
     </header>
     <main>
       <div class="slider-swiper">
-        <div class="container">
-          <div class="slider-swiper__text">
-            <div class="descr">
-              <p class="weight-700">Осетинское пиво за 1 рубль</p>
-              <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
-            </div>
-            <div class="pagination-container">
-              <div class="swiper-pagination">
-                <span style="display: flex; gap: 20px"
-                  ><span class="first-slide__news">01</span> /
-                  <span>04</span></span
-                >
+        <div class="swiper" id="rubl">
+          <div class="container">
+            <div class="slider-swiper__text">
+              <div class="descr">
+                <p class="weight-700">Осетинское пиво за 1 рубль</p>
+                <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
               </div>
+              <div class="pagination-container">
+                <div class="swiper-pagination"></div>
 
-              <div class="arrows">
-                <!-- If we need navigation buttons -->
-                <div class="slider__swiper-button-prev">
-                  <img class="arrow" src="images/prevv.svg" alt="" />
-                </div>
-                <div class="slider__swiper-button-next">
-                  <img class="arrow" src="images/nextt.svg" alt="" />
+                <div class="arrows">
+                  <!-- If we need navigation buttons -->
+                  <div class="slider__swiper-button-prev">
+                    <img class="arrow" src="images/prevv.svg" alt="" />
+                  </div>
+                  <div class="slider__swiper-button-next">
+                    <img class="arrow" src="images/nextt.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper">
+
           <div class="swiper-wrapper">
             <div class="slider__swiper-slide swiper-slide">
               <img src="images/slide.png" alt="" />
@@ -80,7 +76,9 @@
           </div>
         </div>
       </div>
-      <div class="background-img"></div>
+      <div class="background-img">
+        <img src="images/background.png" alt="" />
+      </div>
       <div class="container">
         <div class="about-us">
           <div class="about-us__text1">
@@ -104,12 +102,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="wrapper">
           <div class="about-us-numbers">
-            <div class="blocks">
+            <div class="about-us__block1 block">
               <p class="about-us-numbers_p">11</p>
               <span></span>
-              <div>
+              <div class="block__text">
                 <p class="title">Заведений во Владикавказе</p>
                 <p class="description">
                   We realize ideas from simple to complex, everything becomes
@@ -117,18 +115,18 @@
                 </p>
               </div>
             </div>
-            <div class="blocks">
+            <div class="about-us__block2 block">
               <p class="about-us-numbers_p">2002</p>
               <span></span>
-              <div>
+              <div class="block__text">
                 <p class="title">Год основания</p>
                 <p class="description">
                   We realize ideas from simple to complex, everything becomes
                   easy to use and reach the most potential customers.
                 </p>
               </div>
-            </div>
-            <div class="blocks">
+            </div class="block__text">
+            <div class="about-us__block3 block">
               <p class="about-us-numbers_p">320</p>
               <span></span>
               <div>
@@ -139,10 +137,10 @@
                 </p>
               </div>
             </div>
-            <div class="blocks">
+            <div class="about-us__block4 block">
               <p class="about-us-numbers_p">845</p>
               <span></span>
-              <div>
+              <div class="block__text">
                 <p class="title">Приготовленных блюд в день</p>
                 <p class="description">
                   We realize ideas from simple to complex, everything becomes
@@ -154,45 +152,108 @@
         </div>
       </div>
 
-      <div class="about-us__swiper swiper">
+      <div class="swiper" id="kupol">
         <div class="swiper-wrapper">
           <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide1.png" alt="" />
+            <img class="slide__img" src="images/about-us_slide1.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img class="slide__img" src="images/about-us_slide3.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img class="slide__img" src="images/about-us_slide4.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide about-us__slide">
+            <img src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
           </div>
           <div class="swiper-slide about-us__slide">
             <img src="images/about-us_slide2.png" alt="" />
           </div>
           <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide3.png" alt="" />
+            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
           </div>
           <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide4.png" alt="" />
+            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
           </div>
           <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img src="images/about-us_slide2.png" alt="" />
+            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
+            <div class="slide__sign">
+              <img
+                class="slide__sign_img"
+                src="images/5033about-slider-sign.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
         <div class="about-us__arrows">
-          <div class="about-us__swiper-button-prev swiper-button-prev">
+          <div class="about-us__swiper-button-prev">
             <img class="arrow" src="images/prevv.svg" alt="" />
           </div>
-          <div class="about-us__swiper-button-next swiper-button-next">
+          <div class="about-us__swiper-button-next">
             <img class="arrow" src="images/nextt.svg" alt="" />
           </div>
         </div>
@@ -212,8 +273,12 @@
           <div class="all-events">
             <div class="column1">
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container1.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container1.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">
                   Реально рояльное настроение в "Рояль Баре"!
@@ -221,15 +286,23 @@
                 <h5 class="item__subtitle">Ресторан «Рояль»</h5>
               </div>
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container2.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container2.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">Банкеты со вкусом от "Premier"</h4>
                 <h5 class="item__subtitle">Ресторан «Premier»</h5>
               </div>
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container3.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container3.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">Сет завтраки в "Магии"</h4>
                 <h5 class="item__subtitle">Кафе «Магия»</h5>
@@ -237,15 +310,23 @@
             </div>
             <div class="column2">
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container2.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container2.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">Банкеты со вкусом от "Premier"</h4>
                 <h5 class="item__subtitle">Ресторан «Premier»</h5>
               </div>
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container4.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container4.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">
                   ТОП-5 Мест для твоего идеального завтрака
@@ -253,8 +334,12 @@
                 <h5 class="item__subtitle">Ресторан «Premier»</h5>
               </div>
               <div class="all-events__item">
-                <div class="item__img">
-                  <img src="images/img container1.png" alt="" />
+                <div class="item__img-container">
+                  <img
+                    class="item__img-container_img"
+                    src="images/img container1.png"
+                    alt=""
+                  />
                 </div>
                 <h4 class="item__titles">
                   Реально рояльное настроение в "Рояль Баре"!
@@ -307,14 +392,16 @@
           <div class="footer__contacts">
             <div class="footer__number">Служба качества +7 (928) 864 22 22</div>
             <div class="soc-net">
-              <img class="icon" src="images/insta.png" alt="" />
-              <img class="icon" src="images/facebook.png" alt="" />
-              <img class="icon" src="images/vk.png" alt="" />
+              <a href=""><img class="icon" src="images/insta.png" alt="" /></a>
+              <a href=""
+                ><img class="icon" src="images/facebook.png" alt=""
+              /></a>
+              <a href=""><img class="icon" src="images/vk.png" alt="" /></a>
             </div>
           </div>
         </div>
 
-        <span></span>
+        <span class="footer__line"></span>
 
         <div class="block2">
           <p class="white">Процедура заказа в мобильном приложении</p>
