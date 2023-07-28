@@ -2,23 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Premier cru</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/slider1.css" />
-    <link rel="stylesheet" href="css/about-us.css" />
-    <link rel="stylesheet" href="css/about-us_slider.css" />
     <link rel="stylesheet" href="css/events.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="css/discount.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="header__container">
@@ -76,220 +70,47 @@
       </div>
       <div class="popup" id="popup"></div>
     </header>
+
     <main>
-      <div class="slider-swiper">
-        <div class="swiper" id="rubl">
-          <div class="container">
-            <div class="slider-swiper__text">
-              <div class="descr">
-                <p class="weight-700">Осетинское пиво за 1 рубль</p>
-                <p>При заказе блюд кавказской кухни в кафе Октябрь</p>
-              </div>
-              <div class="pagination-container">
-                <div class="swiper-pagination"></div>
-
-                <div class="arrows">
-                  <!-- If we need navigation buttons -->
-                  <div class="slider__swiper-button-prev">
-                    <img class="arrow" src="images/prevv.svg" alt="" />
-                  </div>
-                  <div class="slider__swiper-button-next">
-                    <img class="arrow" src="images/nextt.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-wrapper">
-            <div class="slider__swiper-slide swiper-slide">
-              <img src="images/slide.png" alt="" />
-            </div>
-            <div class="slider__swiper-slide swiper-slide">
-              <img src="images/slide.png" alt="" />
-            </div>
-            <div class="slider__swiper-slide swiper-slide">
-              <img src="images/slide.png" alt="" />
-            </div>
-            <div class="slider__swiper-slide swiper-slide">
-              <img src="images/slide.png" alt="" />
-            </div>
-          </div>
+      <div class="container">
+        <div class="pages">
+          <a class="pages__link" href="">Главная</a>
+          <img class="sign-next" src="images/arrow-next.png" alt="" />
+          <a class="pages__link" href="">Рестораны</a>
+          <img class="sign-next" src="images/arrow-next.png" alt="" />
+          <a class="pages__link" href=""> Дарим Скидку -20% в день рождения!</a>
         </div>
       </div>
       <div class="background-img">
         <img style="width: 100%" src="images/background.png" alt="" />
       </div>
-      <div class="container">
-        <div class="about-us">
-          <div class="about-us__text1">
-            <p class="about-us__title">о нас</p>
-            <div class="about-us__info">
-              <p class="weight-700">Управляющая компания «Премьер КРЮ»</p>
-              <p class="font-24">
-                Надеемся, что наша работа облегчит Вам непростую задачу найти
-                самое лучшее!
-              </p>
-            </div>
-          </div>
-          <div class="about-us__text2">
-            <p>
-              Таким образом укрепление и развитие структуры влечет за собой
-              процесс внедрения и модернизации новых предложений. Задача
-              организации, в особенности же новая модель организационной
-              деятельности позволяет оценить значение дальнейших направлений
-              развития.
-            </p>
-          </div>
-        </div>
-
-        <div class="wrapper">
-          <div class="about-us-numbers">
-            <div class="about-us__block1 block">
-              <p class="about-us-numbers_p">11</p>
-              <span></span>
-              <div class="block__text">
-                <p class="title">Заведений во Владикавказе</p>
-                <p class="description">
-                  We realize ideas from simple to complex, everything becomes
-                  easy to use and reach the most potential customers.
-                </p>
-              </div>
-            </div>
-            <div class="about-us__block2 block">
-              <p class="about-us-numbers_p">2002</p>
-              <span></span>
-              <div class="block__text">
-                <p class="title">Год основания</p>
-                <p class="description">
-                  We realize ideas from simple to complex, everything becomes
-                  easy to use and reach the most potential customers.
-                </p>
-              </div>
-            </div>
-
-            <div class="about-us__block3 block">
-              <p class="about-us-numbers_p">320</p>
-              <span></span>
-              <div class="block__text">
-                <p class="title">Опытных сотрудников</p>
-                <p class="description">
-                  We realize ideas from simple to complex, everything becomes
-                  easy to use and reach the most potential customers.
-                </p>
-              </div>
-            </div>
-            <div class="about-us__block4 block">
-              <p class="about-us-numbers_p">845</p>
-              <span></span>
-              <div class="block__text">
-                <p class="title">Приготовленных блюд в день</p>
-                <p class="description">
-                  We realize ideas from simple to complex, everything becomes
-                  easy to use and reach the most potential customers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper" id="kupol">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide3.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="swiper-slide about-us__slide">
-            <img class="slide__img" src="images/about-us_slide2.png" alt="" />
-            <div class="slide__sign">
-              <img
-                class="slide__sign_img"
-                src="images/5033about-slider-sign.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="about-us__swiper-button-prev">
-          <img class="arrow" src="images/prevv.svg" alt="" />
-        </div>
-        <div class="about-us__swiper-button-next">
-          <img class="arrow" src="images/nextt.svg" alt="" />
-        </div>
-      </div>
       <div class="container-small">
+        <h1 class="title">Дарим Скидку -20% в день рождения!</h1>
+        <div class="oo">
+          <img src="../images/discount.jpg" alt="" class="discount-img" />
+        </div>
+        <div class="discount-text">
+          <p>Ваш День Рождения - самый лучший день в году!</p>
+          <p>
+            Мы ценим его не меньше Вас, поэтому дарим по такому поводу скидку
+            -20% на посещение любого нашего ресторана непосредственно в День
+            Вашего Рождения, а также в течение 6 дней после!
+          </p>
+          <p>
+            Внезависимости от того, как именно Вы решите провести этот день - в
+            шумной компании или в приятном одиночестве - мы разделим этот
+            прекрасный день вместе с Вами!
+          </p>
+          <p>
+            *Для получения скидки необходимо предъявить вашу скидочную карту.
+            (действует во всех заведениях сети "Премьер Крю" кроме следующих
+            заведений: "Авиатор", "Магия", "Ketchup")
+          </p>
+        </div>
+
         <div class="events">
           <div class="events__header">
-            <h2 class="events__title">События</h2>
+            <h2 class="events__title">другие события</h2>
             <span class="events__line"></span>
             <button class="events__button">
               <p class="button__text">Все события</p>
@@ -378,6 +199,7 @@
           </div>
         </div>
       </div>
+
       <div class="app">
         <div class="container">
           <div class="app__wrapper">
@@ -453,9 +275,5 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/menu-burger.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/about-us.js"></script>
   </body>
 </html>
