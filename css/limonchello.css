@@ -197,14 +197,23 @@
   }
   .events__title {
     line-height: 40px;
+    margin-right: 0;
   }
   .events__item-container {
     height: 320px;
+  }
+  .events__item{
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .events__item-container {
-    height: 250px;
+    height: 200px;
+  }
+  .limonchello__swiper-button-prev,
+  .limonchello__swiper-button-next  {
+    width: 40px !important;
+    height: 40px !important;
   }
 }
