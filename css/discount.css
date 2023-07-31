@@ -36,7 +36,9 @@
 
 .events__title {
   width: 400px;
+  margin-right: 0;
 }
+
 .title {
   height: auto;
   max-width: 910px;
